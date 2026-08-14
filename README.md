@@ -1,6 +1,3 @@
-# Portfolio_Tarique
-https://portfolio-tarique.vercel.app/
-
 <div align="center">
 
 # ✦ PERSONAL PORTFOLIO
