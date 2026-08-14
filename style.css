@@ -1,0 +1,1124 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    linear-gradient(rgba(8,12,25,.80),
+    rgba(8,12,25,.88)),
+    url("images/bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:#ffffff;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================
+   VARIABLES
+========================================== */
+
+:root{
+
+    --primary:#f5b041;
+
+    --secondary:#ffd369;
+
+    --glass:rgba(255,255,255,.10);
+
+    --glass-border:rgba(255,255,255,.18);
+
+    --shadow:0 8px 32px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   GLASS CARD
+========================================== */
+
+.glass{
+
+    background:var(--glass);
+
+    backdrop-filter:blur(16px);
+
+    -webkit-backdrop-filter:blur(16px);
+
+    border:1px solid var(--glass-border);
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:1000;
+
+}
+
+.navbar{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:20px auto;
+
+    padding:16px 35px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+}
+
+.logo{
+
+    color:var(--secondary);
+
+    font-size:30px;
+
+    font-weight:700;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:30px;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--secondary);
+
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:140px 20px 80px;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+    width:100%;
+
+    text-align:center;
+
+    padding:50px;
+
+}
+
+/* ==========================================
+   PROFILE IMAGE
+========================================== */
+
+.profile-image{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid rgba(255,255,255,.25);
+
+    margin-bottom:25px;
+
+    transition:.4s;
+
+}
+
+.profile-image:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================
+   HERO TEXT
+========================================== */
+
+.hero h1{
+
+    font-size:48px;
+
+    margin-bottom:10px;
+
+}
+
+.hero h1 span{
+
+    color:var(--secondary);
+
+}
+
+.hero h3{
+
+    font-size:22px;
+
+    font-weight:400;
+
+    color:#dddddd;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    color:#eeeeee;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:14px 32px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    color:#000;
+
+    background:var(--secondary);
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+    background:#ffffff;
+
+}
+
+.btn-outline{
+
+    background:transparent;
+
+    color:#ffffff;
+
+    border:2px solid var(--secondary);
+
+}
+
+.btn-outline:hover{
+
+    background:var(--secondary);
+
+    color:#000;
+
+}
+
+
+
+/* ==========================================
+   SECTION TITLE
+========================================== */
+
+section{
+
+    padding:100px 20px;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:38px;
+
+    color:var(--secondary);
+
+    margin-bottom:50px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   ABOUT SECTION
+========================================== */
+
+.about{
+
+    width:100%;
+
+}
+
+.about-card{
+
+    padding:45px;
+
+    text-align:center;
+
+}
+
+.about-card p{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#eeeeee;
+
+    margin-bottom:20px;
+
+}
+
+.about-card strong{
+
+    color:var(--secondary);
+
+}
+
+/* ==========================================
+   SKILLS SECTION
+========================================== */
+
+.skills{
+
+    width:100%;
+
+}
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+}
+
+/* ==========================================
+   SKILL CARD
+========================================== */
+
+.skill-card{
+
+    padding:28px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#ffffff;
+
+    transition:0.35s;
+
+    cursor:pointer;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+    background:rgba(255,255,255,.18);
+
+    color:var(--secondary);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================
+   SKILL ICON (OPTIONAL)
+========================================== */
+
+.skill-card i{
+
+    display:block;
+
+    font-size:38px;
+
+    margin-bottom:15px;
+
+    color:var(--secondary);
+
+}
+
+/* ==========================================
+   SIMPLE FADE ANIMATION
+========================================== */
+
+.about-card,
+.skill-card{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/* ==========================================
+   PROJECTS SECTION
+========================================== */
+
+.projects{
+
+    width:100%;
+
+}
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.project-card{
+
+    overflow:hidden;
+
+    text-align:center;
+
+    padding-bottom:30px;
+
+    transition:0.4s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.45);
+
+}
+
+.project-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:20px 20px 0 0;
+
+}
+
+.project-card h3{
+
+    font-size:28px;
+
+    margin:25px 0 15px;
+
+    color:var(--secondary);
+
+}
+
+.project-card p{
+
+    color:#eeeeee;
+
+    padding:0 25px;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.project-card .btn{
+
+    margin-top:10px;
+
+}
+
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact{
+
+    width:100%;
+
+}
+
+.contact-card{
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:45px;
+
+    text-align:left;
+
+}
+
+.contact-card p{
+
+    font-size:18px;
+
+    margin:22px 0;
+
+    color:#eeeeee;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    word-break:break-word;
+
+}
+
+.contact-card i{
+
+    color:var(--secondary);
+
+    font-size:24px;
+
+    width:35px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.contact-card p:hover i{
+
+    transform:scale(1.2);
+
+}
+
+/* ==========================================
+   CONTACT LINKS
+========================================== */
+
+.contact-card a{
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.contact-card a:hover{
+
+    color:var(--secondary);
+
+}
+
+/* ==========================================
+   BUTTON HOVER EFFECT
+========================================== */
+
+.btn{
+
+    box-shadow:0 10px 25px rgba(245,176,65,.25);
+
+}
+
+.btn:hover{
+
+    box-shadow:0 15px 35px rgba(245,176,65,.45);
+
+}
+
+/* ==========================================
+   PROJECT CARD ANIMATION
+========================================== */
+
+.project-card{
+
+    animation:fadeProject .8s ease;
+
+}
+
+@keyframes fadeProject{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+
+    padding:30px 20px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.06);
+
+    backdrop-filter:blur(15px);
+
+    border-top:1px solid rgba(255,255,255,.12);
+
+}
+
+footer p{
+
+    color:#dddddd;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   IMAGE HOVER EFFECT
+========================================== */
+
+.project-card img{
+
+    transition:0.5s;
+
+}
+
+.project-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   HERO IMAGE EFFECT
+========================================== */
+
+.profile-image{
+
+    box-shadow:0 10px 30px rgba(245,176,65,.25);
+
+}
+
+.profile-image:hover{
+
+    transform:scale(1.06);
+
+    box-shadow:0 15px 40px rgba(245,176,65,.45);
+
+}
+
+/* ==========================================
+   NAVBAR LINK UNDERLINE
+========================================== */
+
+.nav-links a{
+
+    position:relative;
+
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   CARD TRANSITIONS
+========================================== */
+
+.about-card,
+.skill-card,
+.project-card,
+.contact-card{
+
+    transition:.35s;
+
+}
+
+.about-card:hover,
+.contact-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#101522;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
+
+/* ==========================================
+   TEXT SELECTION
+========================================== */
+
+::selection{
+
+    background:var(--secondary);
+
+    color:#000;
+
+}
+
+/* ==========================================
+   FADE ANIMATION
+========================================== */
+
+.hero-content,
+.about-card,
+.skill-card,
+.project-card,
+.contact-card{
+
+    animation:fadeInUp .8s ease;
+
+}
+
+@keyframes fadeInUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   GLOBAL TRANSITION
+========================================== */
+
+*{
+
+    transition:background .3s,
+               color .3s,
+               transform .3s,
+               box-shadow .3s;
+
+}
+
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+}
+
+.contact-card{
+    width:100%;
+    max-width:700px;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.15);
+}
+
+.contact-card p{
+    margin:12px 0;
+    color:#ddd;
+    font-size:1rem;
+}
+
+.contact-card a{
+    color:#7dd3fc;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.contact-card a:hover{
+    color:#fff;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:60px;
+    color:#999;
+    font-size:.9rem;
+}
+
+/* =========================
+   SCROLL BAR
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#07111d;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#3b82f6;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#2563eb;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.hero,
+.about,
+.skills,
+.projects,
+.contact{
+    animation:fadeUp .8s ease;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media(max-width:992px){
+
+    .hero-content{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .hero-text{
+        padding-right:0;
+        margin-top:30px;
+    }
+
+    .hero-image img{
+        width:280px;
+        height:280px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    nav ul li{
+        margin:5px;
+    }
+
+    h1{
+        font-size:2.4rem;
+    }
+
+    h2{
+        font-size:2rem;
+    }
+
+    .skills-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .project-grid{
+        grid-template-columns:1fr;
+    }
+
+    section{
+        padding:70px 8%;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    h1{
+        font-size:2rem;
+    }
+
+    .hero-image img{
+        width:220px;
+        height:220px;
+    }
+
+    .btn{
+        display:block;
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+
+/* Active Navigation Link */
+
+nav ul li a.active{
+    color:#7dd3fc;
+}
+
+/* Reveal Animation */
+
+.about,
+.skills,
+.projects,
+.contact{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all .8s ease;
+}
+
+.about.show,
+.skills.show,
+.projects.show,
+.contact.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
