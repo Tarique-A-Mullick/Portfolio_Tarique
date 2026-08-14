@@ -17,7 +17,7 @@
 
 ### 🌐 Explore the Portfolio
 
-[![Live Website](https://img.shields.io/badge/🚀_LIVE_WEBSITE-7C3AED?style=for-the-badge)]([YOUR_LIVE_LINK](https://vercel.com/ramijrjmullick-gmailcoms-projects/portfolio-tarique))
+[![Live Website](https://img.shields.io/badge/🚀_LIVE_WEBSITE-7C3AED?style=for-the-badge)](https://portfolio-tarique.vercel.app/)
 
 [![GitHub Repository](https://img.shields.io/badge/💻_SOURCE_CODE-181717?style=for-the-badge&logo=github)](https://github.com/Tarique-A-Mullick/Portfolio_Tarique)
 
